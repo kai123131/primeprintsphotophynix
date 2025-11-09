@@ -1,57 +1,51 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Our Services | Prime Prints & Photophynix</title>
-  <link rel="stylesheet" href="style.css">
-  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
-  <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Services - Prime Studio</title>
+  <link rel="stylesheet" href="style.css" />
 </head>
 <body>
-  <header class="navbar">
-    <div class="logo">📸 Prime Prints & Photophynix</div>
-    <nav>
-      <a href="index.html">Home</a>
-      <a href="about.html">About</a>
-      <a href="services.html" class="active">Services</a>
-      <a href="gallery.html">Gallery</a>
-      <a href="booking.html">Booking</a>
-      <a href="contact.html">Contact</a>
-    </nav>
-  </header>
+<header>
+  <nav>
+    <div class="logo">
+      <img src="logo.png" alt="Prime Studio Logo">
+      <h1>Prime Studio</h1>
+    </div>
+    <ul class="nav-links">
+      <li><a href="index.html">Home</a></li>
+      <li><a href="about.html">About</a></li>
+      <li><a href="services.html" class="active">Services</a></li>
+      <li><a href="gallery.html">Gallery</a></li>
+      <li><a href="contact.html">Contact</a></li>
+    </ul>
+    <button id="theme-toggle">🌙</button>
+  </nav>
+</header>
 
-  <section class="page-header">
-    <h1>Our Services</h1>
-    <p>We offer premium photography, printing, and design services tailored to every occasion.</p>
-  </section>
-
-  <section class="services-section fade-in">
+<section class="services">
+  <h2>Our Services</h2>
+  <div class="service-list">
     <div class="service-card">
-      <i class="fas fa-camera-retro service-icon"></i>
-      <h2>Photography</h2>
-      <p>Capture memories that last a lifetime — professional portraits, events, and product shoots.</p>
+      <h3>Photography</h3>
+      <p>Professional photoshoots for weddings, portraits, and events.</p>
     </div>
     <div class="service-card">
-      <i class="fas fa-print service-icon"></i>
-      <h2>Printing</h2>
-      <p>High-quality printing for business cards, posters, photo albums, and more.</p>
+      <h3>Printing</h3>
+      <p>High-quality photo prints, canvas, and creative print materials.</p>
     </div>
     <div class="service-card">
-      <i class="fas fa-palette service-icon"></i>
-      <h2>Graphic Design</h2>
-      <p>Creative designs for logos, invitations, and brand materials that stand out.</p>
+      <h3>Photo Editing</h3>
+      <p>Expert retouching and color correction to make your pictures perfect.</p>
     </div>
-  </section>
+  </div>
+</section>
 
-  <section class="cta-section">
-    <h2>Need something special?</h2>
-    <p>Contact us to discuss custom projects — we reply within 24 hours!</p>
-    <a href="contact.html" class="cta-btn">Get in Touch</a>
-  </section>
+<footer>
+  <p>© 2025 Prime Studio | Printing & Photography</p>
+</footer>
 
-  <footer>
-    <p>© 2025 Prime Prints & Photophynix | Designed by Prime Team</p>
-  </footer>
+<script src="theme.js"></script>
 </body>
 </html>
