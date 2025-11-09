@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Contact - Prime Prints & Photophynix</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <header>
+    <h1>Contact Us</h1>
+    <nav>
+      <a href="index.html">Home</a>
+      <a href="about.html">About</a>
+      <a href="services.html">Services</a>
+      <a href="contact.html">Contact</a>
+    </nav>
+  </header>
+
+  <main>
+    <section>
+      <h2>Get in Touch</h2>
+      <p><strong>Phone:</strong> 9574422602</p>
+      <p><strong>Email:</strong> <a href="mailto:Pransh67@gmail.com">Pransh67@gmail.com</a></p>
+      <p>We’d love to hear from you! Whether you need a photoshoot or print service, we’re just a message away.</p>
+    </section>
+  </main>
+
+  <footer>
+    <p>© 2025 Prime Prints & Photophynix | Designed by Pransh</p>
+  </footer>
+</body>
+</html>
