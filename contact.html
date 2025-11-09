@@ -1,16 +1,17 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Contact - Prime Studio</title>
-  <link rel="stylesheet" href="style.css" />
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contact | Prime Studio</title>
+  <link rel="stylesheet" href="style.css">
+  <script defer src="theme.js"></script>
 </head>
 <body>
-<header>
+
   <nav>
     <div class="logo">
-      <img src="logo.png" alt="Prime Studio Logo">
+      <img src="logo.png" alt="Logo">
       <h1>Prime Studio</h1>
     </div>
     <ul class="nav-links">
@@ -22,22 +23,31 @@
     </ul>
     <button id="theme-toggle">🌙</button>
   </nav>
-</header>
 
-<section class="contact">
-  <h2>Contact or Book Us</h2>
-  <p>We’ll reply within 24 hours via WhatsApp or Email.</p>
+  <section class="contact">
+    <h2>Get in Touch</h2>
+    <p>Have a question or want to book a shoot? We reply within 24 hours 📸</p>
+    <div class="contact-options">
+      <a href="https://wa.me/919574422602?text=Hello%20Prime%20Studio%2C%20I%20want%20to%20book%20a%20service."
+         class="btn whatsapp" onclick="showMessage(event)">Chat on WhatsApp</a>
+      <a href="mailto:Pransh67@gmail.com?subject=Booking%20Enquiry&body=Hi%20Prime%20Studio%2C%20I%20want%20to%20book..."
+         class="btn email" onclick="showMessage(event)">Send Email</a>
+    </div>
+  </section>
 
-  <div class="contact-options">
-    <a href="https://wa.me/919574422602?text=Hi%20Prime%20Studio!%20I%20want%20to%20book%20a%20session." class="btn whatsapp">💬 WhatsApp Us</a>
-    <a href="mailto:Pransh67@gmail.com?subject=Booking%20Request&body=Hi%20Prime%20Studio,%20I%20want%20to%20book%20a%20session." class="btn email">✉️ Email Us</a>
-  </div>
-</section>
+  <div id="popup" style="display:none;" class="popup">Thank you! We’ll respond within 24 hours. 😊</div>
 
-<footer>
-  <p>© 2025 Prime Studio | Printing & Photography</p>
-</footer>
+  <footer>
+    <p>© 2025 Prime Studio | All Rights Reserved</p>
+  </footer>
 
-<script src="theme.js"></script>
+  <script>
+    function showMessage(e) {
+      const popup = document.getElementById('popup');
+      popup.style.display = 'block';
+      setTimeout(() => popup.style.display = 'none', 3000);
+    }
+  </script>
+
 </body>
 </html>
