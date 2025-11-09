@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Booking - Prime Prints & Photophynix</title>
+  <title>Contact | Prime Prints & Photophynix</title>
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
@@ -14,64 +14,32 @@
       <a href="about.html">About</a>
       <a href="services.html">Services</a>
       <a href="gallery.html">Gallery</a>
-      <a href="booking.html" class="active">Booking</a>
-      <a href="contact.html">Contact</a>
+      <a href="booking.html">Booking</a>
+      <a href="contact.html" class="active">Contact</a>
     </nav>
   </header>
 
   <section class="page-header">
-    <h1>Book Your Service</h1>
-    <p>Fill out the form below to book a session or printing service. We’ll confirm your booking on WhatsApp within 24 hours.</p>
+    <h1>Contact Us</h1>
+    <p>We’d love to hear from you! Reach out via WhatsApp or Email — we reply within 24 hours.</p>
   </section>
 
-  <section class="booking-container fade-in">
-    <form class="booking-form" onsubmit="sendBooking(event)">
-      <label for="name">Full Name</label>
-      <input type="text" id="name" placeholder="Enter your full name" required>
+  <section class="contact-options">
+    <div class="contact-card">
+      <h2>📱 WhatsApp</h2>
+      <p>Quick replies — message us directly on WhatsApp!</p>
+      <a href="https://wa.me/919574422602" target="_blank" class="cta-btn">Chat Now</a>
+    </div>
 
-      <label for="service">Select Service</label>
-      <select id="service" required>
-        <option value="">Choose a service</option>
-        <option>Photo Shoot</option>
-        <option>Printing (Posters, Cards, etc.)</option>
-        <option>Editing & Retouch</option>
-        <option>Event Photography</option>
-        <option>Custom Design</option>
-      </select>
-
-      <label for="date">Preferred Date</label>
-      <input type="date" id="date" required>
-
-      <label for="message">Additional Details</label>
-      <textarea id="message" rows="4" placeholder="Any specific requests or notes..."></textarea>
-
-      <button type="submit" class="contact-btn whatsapp">📅 Submit Booking via WhatsApp</button>
-    </form>
+    <div class="contact-card">
+      <h2>📧 Email</h2>
+      <p>Send us your queries, and we’ll get back to you within 24 hours.</p>
+      <a href="mailto:Pransh67@gmail.com" class="cta-btn">Send Email</a>
+    </div>
   </section>
 
   <footer>
     <p>© 2025 Prime Prints & Photophynix | Designed by Prime Team</p>
   </footer>
-
-  <script>
-    function sendBooking(event) {
-      event.preventDefault();
-      const name = document.getElementById("name").value;
-      const service = document.getElementById("service").value;
-      const date = document.getElementById("date").value;
-      const message = document.getElementById("message").value;
-
-      const text = `📸 *New Booking Request* %0A
-*Name:* ${name}%0A
-*Service:* ${service}%0A
-*Date:* ${date}%0A
-*Details:* ${message}%0A
-----------------------------%0A
-Please confirm my booking.`;
-
-      const whatsappURL = `https://wa.me/919574422602?text=${text}`;
-      window.open(whatsappURL, "_blank");
-    }
-  </script>
 </body>
 </html>
